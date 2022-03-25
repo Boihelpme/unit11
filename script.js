@@ -57,9 +57,24 @@ function rannum() {
     var numbers = Math.floor(Math.random() * 10 ) + 1;
     return numbers
 }
-var user = console.log(username())
+// var user = console.log(username())
 
-var numbers = console.log(rannum())
+var numbers = rannum()
+
+
+function rannum1(x){
+    var a1 = `The user got ${x}`
+    return a1
+}
+
+function rannum2(y){
+    var a2 = `The computer got ${y}`
+    return a2
+}
+
+console.log(rannum1(rannum()))
+console.log(rannum2(rannum()))
+
 
 
 
