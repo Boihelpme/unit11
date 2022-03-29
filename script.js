@@ -43,9 +43,16 @@
 //     var p2 = prompt(`Would you like to play again? y = yes n = no`)
 
 // } while (p2 == "y") 
-   
+  
+alert(`Welcome to 20! This is competition to see
+ which player gets closer to the number 20. You are 
+ going to be playing agains the computer. \n\n You will draw from 1 to 10.
+ The computer will stop at 16. \n\n Pay attention to the screen to see what your total is, and if you need another number, press "y".`)
 
+alert(`Now... Its computer's turn.`)
 
+compc = 0;
+userc = 0;
 
 function username() {
     var user = prompt("Whats your name?")
@@ -59,21 +66,38 @@ function rannum() {
 }
 // var user = console.log(username())
 
-var numbers = rannum()
 
 
-function rannum1(x){
-    var a1 = `The user got ${x}`
-    return a1
+
+
+function rannum2(){
+    do {
+
+        compc = compc + rannum();
+        alert(`Computer new total is ${compc}`)
+
+    } while (compc <= 16) 
+    return compc 
 }
 
-function rannum2(y){
-    var a2 = `The computer got ${y}`
-    return a2
+function rannum1(){
+    do { 
+        userc = userc + rannum();
+        alert(`Your totat is ${userc}`)
+        var p1 = prompt(`Would you like to go again? y = Yes. n = No`)
+        
+    } while ((userc <= 19) && (p1 == "y"))
+    return userc
+   
 }
 
-console.log(rannum1(rannum()))
-console.log(rannum2(rannum()))
+console.log(rannum1())
+alert("Now its computer's turn")
+console.log(rannum2())
+
+function 
+
+
 
 
 
