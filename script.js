@@ -100,11 +100,11 @@ function comparingNumbers(userc, compc) {
     if ((compc > 20) && (userc < 20)) {
         alert(`Congrats you won. You got ${userc} computer got ${compc}`) 
     } else if ((compc <= 20) && (userc <=20) && (compc < userc)) {
-        alert(`Congrats you won. You got ${userc} computer got ${compc}`) 
+        alert(`You lost. You got ${userc} computer got ${compc}`) 
     } else  if ((compc <= 20) && (userc <= 20) && (userc < compc)) {
         alert(`Congrats you won. You got ${userc} computer got ${compc}`) 
     } else if  ((compc <= 20) && (userc <= 20) && (userc == compc)){
-        alert(`Congrats you won. You got ${userc} computer got ${compc}`) 
+        alert(`Congrats you equal. You got ${userc} computer got ${compc}`) 
     } else if ((userc > 20) && (compc < 20)) {
         alert(`Congrats you won. You got ${userc} computer got ${compc}`) 
     }
