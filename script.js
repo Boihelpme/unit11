@@ -43,6 +43,13 @@
 //     var p2 = prompt(`Would you like to play again? y = yes n = no`)
 
 // } while (p2 == "y") 
+
+function username() {
+    var user = prompt("Whats your name?")
+    return user
+}
+
+username()
   
 alert(`Welcome to 20! This is competition to see
  which player gets closer to the number 20. You are 
@@ -54,10 +61,7 @@ alert(`Now... Its computer's turn.`)
 compc = 0;
 userc = 0;
 
-function username() {
-    var user = prompt("Whats your name?")
-    return user
-}
+
 
 
 function rannum() {
@@ -91,13 +95,24 @@ function rannum1(){
    
 }
 
-console.log(rannum1())
-alert("Now its computer's turn")
-console.log(rannum2())
 
-function 
+function comparingNumbers(userc, compc) {
+    if ((compc > 20) && (userc < 20)) {
+        alert(`Congrats you won. You got ${userc} computer got ${compc}`) 
+    } else if ((compc <= 20) && (userc <=20) && (compc < userc)) {
+        alert(`Congrats you won. You got ${userc} computer got ${compc}`) 
+    } else  if ((compc <= 20) && (userc <= 20) && (userc < compc)) {
+        alert(`Congrats you won. You got ${userc} computer got ${compc}`) 
+    } else if  ((compc <= 20) && (userc <= 20) && (userc == compc)){
+        alert(`Congrats you won. You got ${userc} computer got ${compc}`) 
+    } else if ((userc > 20) && (compc < 20)) {
+        alert(`Congrats you won. You got ${userc} computer got ${compc}`) 
+    }
+}
 
 
+
+comparingNumbers(rannum1(),rannum2() )
 
 
 
